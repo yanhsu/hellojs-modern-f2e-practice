@@ -1,4 +1,4 @@
-# HelloJS Week4 - Modern Front-End workflow Sanmple
+# HelloJS Week4 - Modern Front-End Workflow Sample
 ## How to start
 ```
 npm install
