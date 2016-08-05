@@ -16,7 +16,7 @@ module.exports = {
   //輸出位置
   output: {
     path: path.resolve(__dirname, 'build'), //webpack 建置專案的路徑
-    publicPath: "http://localhost:3000/build/", //css引入url時參考的路徑
+    publicPath: "http://localhost:8000/build/", //css引入url時參考的路徑
     filename: "[name].js"
   },
 
@@ -59,7 +59,7 @@ module.exports = {
     // BrowserSync
     new BrowserSyncPlugin({
       host: 'localhost',
-      port: 3000,
+      port: 8000,
       proxy: 'localhost:9527',
       files: ['*.html'] //監聽html檔案
     }),

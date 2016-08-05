@@ -1,23 +1,27 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+@import "./media_query.scss";
 .box{
   background-color: #EEE;
-  height: 50px;
+  height: $size%4;
   margin: 5px 0px;
   padding: 10px;
   text-align: center;
-  border: 1px solid blue;
-  border-radius: 10px;
+@include abc ;
 
   text-align: center;
+  & > h3 {
+    @include sm-max{
+    color: green;
+   }
+  }
 }
 
-h3 {
-  color: blue;
-}
+
 
 input[type="text"] {
   width: 100%;
   font-size: 15px * 4;
   color: green;
-  border: 1px solid blue;
-  border-radius: 10px;
+@include abc ;
 }
